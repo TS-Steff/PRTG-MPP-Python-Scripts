@@ -9,12 +9,14 @@
 most scripts support parameters. While in bash, these are standard like ```<script> -param value -param2 value2``` in the sensor settings you have to add the parameters seperated by a whitespace like ```value value2```.  
 This will not allow you to add parameters with whitespaces!!!
 
+
+## requirements
+for wmi skritps https://github.com/diyan/pywinrm/
+
+
 ## skripts
 ### wmi_services.py
 This scipts gets a list of windows services
-
-#### requirements
-https://github.com/diyan/pywinrm/
 
 #### paramters
 | parameters | note
@@ -24,3 +26,26 @@ https://github.com/diyan/pywinrm/
 | username |
 | password |
 | services | commasperated ex. TSGateway,TermService
+
+
+### wmi_memory.py
+returns available and free memory
+
+#### paramters
+| parameters | note
+|:-----------|:---
+| host |
+| domain |
+| username |
+| password |
+
+### wmi_totUserSessions.py
+returns the number of active User Sessions
+
+#### paramters
+| parameters | note
+|:-----------|:---
+| host |
+| domain |
+| username |
+| password |
