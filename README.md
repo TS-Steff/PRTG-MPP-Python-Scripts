@@ -6,13 +6,5 @@
 ## info
 
 ### parameters
-most scripts support parameters. While in bash, these are standard like 
-```<script> -param value -param2 value2```
-
-```
-{
-  "firstName": "John",
-  "lastName": "Smith",
-  "age": 25
-}
-```
+most scripts support parameters. While in bash, these are standard like ```<script> -param value -param2 value2``` in the sensor settings you have to add the parameters seperated by a whitespace like ```value value2```.  
+This will not allow you to add parameters with whitespaces!!!
