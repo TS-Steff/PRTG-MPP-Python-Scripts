@@ -7,4 +7,4 @@
 
 ### parameters
 most scripts support parameters. While in bash, these are standard like 
-''<script> -param value -param2 value2''
+```<script> -param value -param2 value2```
