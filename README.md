@@ -15,37 +15,8 @@ for wmi skritps https://github.com/diyan/pywinrm/
 
 
 ## skripts
-### wmi_services.py
-This scipts gets a list of windows services
-
-#### paramters
-| parameters | note
-|:-----------|:---
-| host |
-| domain |
-| username |
-| password |
-| services | commasperated ex. TSGateway,TermService
-
-
-### wmi_memory.py
-returns available and free memory
-
-#### paramters
-| parameters | note
-|:-----------|:---
-| host |
-| domain |
-| username |
-| password |
-
-### wmi_totUserSessions.py
-returns the number of active User Sessions
-
-#### paramters
-| parameters | note
-|:-----------|:---
-| host |
-| domain |
-| username |
-| password |
+| name                      | purpose
+|:--------------------------|:---
+| wmi_services.py           | get the state of a services list
+| wmi_memory.py             | returns available and free memory
+| wmi_totUserSessions.py    | returns the number of active User Sessions
