@@ -15,8 +15,14 @@ for wmi skritps https://github.com/diyan/pywinrm/
 
 
 ## skripts
+### wmi
 | name                      | purpose
 |:--------------------------|:---
 | wmi_services.py           | get the state of a services list
 | wmi_memory.py             | returns available and free memory
 | wmi_totUserSessions.py    | returns the number of active User Sessions
+
+### mpp-local
+| name                      | purpose
+|:--------------------------|:---
+| apt-update-count.py       | returns number of upgradable packages
