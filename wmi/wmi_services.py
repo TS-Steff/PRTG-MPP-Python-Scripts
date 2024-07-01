@@ -1,5 +1,33 @@
 #!/usr/bin/env python3
 
+"""
+    wmi_services
+
+    This Script has to be put into the folder /opt/paessler/share/scripts on the mpp
+    Returns the state of the given services
+    The target host has to be in a domain
+
+    Parameters:
+    host (str): host to get memory from
+    domain (str): domain where the computer belongs to
+    username (str): user with WMI Query permissions
+    password (str): the users password
+    services (str): a comma sperated list of services names (not display name)
+
+    Requirements:
+    pywinrm - https://github.com/diyan/pywinrm/    
+  
+    Note:
+    bash - use parameters as normal
+    prtg - strings must be blankspace seperated, without parameter name
+    services for example TSGateway,TermService
+
+    Link:
+    https://ts-man.ch
+    https://github.com/TS-Steff
+
+"""
+
 import winrm
 import json
 import argparse

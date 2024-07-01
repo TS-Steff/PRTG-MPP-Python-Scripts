@@ -1,4 +1,18 @@
 #!/usr/bin/env python3
+"""
+    apt-update-count
+
+    Returns the number of upgradable packages
+    This Script has to be put into the folder /opt/paessler/share/scripts on the mpp itself
+    
+    Note:
+    This script may run on other linux machines with the skript sensor too. Not yet tested
+
+    Link:
+    https://ts-man.ch
+    https://github.com/TS-Steff
+
+"""
 
 import subprocess
 import re

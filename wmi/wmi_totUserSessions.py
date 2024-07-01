@@ -1,11 +1,30 @@
 #!/usr/bin/env python3
 
-###
-# .DESCRIPTION
-#  Returns installed memory and free memory in MB
-#
-# .LINKS
-#  https://github.com/diyan/pywinrm/
+"""
+    wmi_services
+
+    This Script has to be put into the folder /opt/paessler/share/scripts on the mpp
+    Returns how many active sessions are on the host
+    The target host has to be in a domain
+
+    Parameters:
+    host (str): host to get memory from
+    domain (str): domain where the computer belongs to
+    username (str): user with WMI Query permissions
+    password (str): the users password
+    
+    Requirements:
+    pywinrm - https://github.com/diyan/pywinrm/    
+  
+    Note:
+    bash - use parameters as normal
+    prtg - strings must be blankspace seperated, without parameter name
+
+    Link:
+    https://ts-man.ch
+    https://github.com/TS-Steff
+
+"""
 
 import winrm
 import json
