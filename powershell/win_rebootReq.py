@@ -38,7 +38,7 @@ else:
 
 s = winrm.Session(host, auth=('{}@{}'.format(user,domain), password), transport='ntlm')
 
-ps_winupd_tot = """Clear
+ps_reqReboot = """Clear
 $rebootPending = 0
 
 # check if reboot is pending
@@ -49,7 +49,7 @@ if (Test-Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate\Aut
 $rebootPending
 """
 
-r = s.run_ps(ps_winupd_tot)
+r = s.run_ps(ps_reqReboot)
 rebootRequired = r.std_out.decode("utf-8").rstrip()
 
 print(
