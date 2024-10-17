@@ -28,6 +28,7 @@ for wmi skritps https://github.com/diyan/pywinrm/
 ### wmi
 | name                      | purpose
 |:--------------------------|:---
+| wmi_cpu_usage.py          | returns current cpu usage for each core and _toal
 | wmi_services.py           | get the state of a services list
 | wmi_memory.py             | returns available and free memory
 
