@@ -23,6 +23,7 @@ for wmi skritps https://github.com/diyan/pywinrm/
 |:--------------------------|:---
 | win_rebootReq.py          | returns if there is a windows update reboot pending 
 | win_totUserSessions.py    | returns the number of active User Sessions
+| win_upd.py                | returns the windows update state (updates hidden, optional, critical and days since last updatescan)
 
 ### wmi
 | name                      | purpose
