@@ -117,18 +117,3 @@ for entry in rjson:
 
 # Format the result as JSON and print it to stdout.
 print(json.dumps(prtg_json))
-exit()
-
-
-for svc in services:
-	print(svc)
-
-
-# INFO #
-ps_mem_tot = """Clear
-$CmpSys = WmiObject Win32_ComputerSystem
-$MB = 1048576
-[int]($CmpSys.TotalPhysicalMemory / $MB) """
-
-r = s.run_ps(ps_mem_tot)
-MemTot = r.std_out.decode("utf-8").rstrip()
